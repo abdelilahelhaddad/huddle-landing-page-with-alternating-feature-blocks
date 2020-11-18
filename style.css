@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+:root{
+  --Pink: hsl(322, 100%, 66%);
+  --Pale-Cyan: hsl(193, 100%, 96%);
+  --Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+.container{
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--Dark-Cyan);
+}
+
+.Btn{
+  outline: none;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Hero Page */
+
+#header{
+  background: var(--Pale-Cyan) url(./images/bg-hero-desktop.svg);
+  height: 100vh;
+  padding: 2rem 0;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.Btn-nav{
+  color: var(--Dark-Cyan) ;
+  background: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 50px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-header{
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content{
+  flex: 1 1 45vw;
+}
+
+.main-test h1{
+  font-size: 42px;
+  margin-bottom: 1.5rem;
+}
+
+.main-test p{
+  margin-bottom: 2rem;
+}
+
+.Btn-main{
+  display: inline-block;
+  color: white;
+  background: var(--Pink);
+  font-size: 16px;
+  padding: 15px 60px;
+  border-radius: 40px;
+}
+
+.main-illustration{
+  flex: 1 1 55vw;
+}
+
+.main-illustration img{
+  width: 100%;
+}
+
+/* Blocks Section */
+
+#blocks .container{
+  padding: 8rem 0;
+}
+
+.grow-together, .flowing-conversations, .your-users{
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: .8rem;
+  margin-bottom: 2.5rem;
+  height: 350px;
+}
+
+.content{
+  flex:1 1 60vh;
+  margin-left: 6rem;
+  margin-right: 1rem;
+}
+
+.content-text h2{
+  margin-bottom: 1rem;
+}
+
+.content-text p{
+  color: var(--Grayish-Blue);
+}
+
+.illustration{
+  flex:1 1 40vh;
+  padding: 3rem 1rem 3rem 6rem;
+}
+
+.illustration img{
+  width: 100%;
+}
+
+/* Build Community */
+
+#build-community{
+  position: relative;
+  margin-bottom: -6rem;
+  z-index: 99;
+}
+
+#build-community .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block{
+  padding: 3rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: white;
+}
+
+.block h2{
+  margin-bottom: 2rem;
+}
+
+.Btn-block{
+  display: inline-block;
+  color: white;
+  background: var(--Pink);
+  font-size: 16px;
+  padding: 20px 70px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+
+#footer{
+  background: var(--Dark-Cyan);
+  padding: 11rem 0 4rem;
+}
+
+#footer .container{
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .container .logo-footer{
+  margin-bottom: 2rem;
+}
+
+#footer .container .footer-infos{
+  display: flex;
+  gap: 7rem;
+  font-size: 15px;
+}
+
+.address-phone-email .address, .phone, .email{
+  display: flex;
+  align-items: center;
+}
+
+.address-phone-email{
+  width: 43%;
+}
+
+.socials{
+  width: 29%;
+}
+
+.about-us, .contact-us{
+  width: 13%;
+}
+
+.address img{
+  margin-right: 2.6rem;
+  margin-top: -2rem;
+}
+
+.phone img, 
+.email img{
+  margin-right: 2rem;
+  margin-top: -1rem;
+}
+
+.address p, .phone p, .email p{
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.list{
+  list-style: none;
+}
+
+li{
+  margin-bottom: 1rem;
+}
+
+a{
+  color: white;
+}
+
+.socials a{
+  margin-right: .7rem;
+}
+
+.socials a i{
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 2rem;
+}
+
+#footer .container .copyright p{
+  color: white;
+  text-align: right;
+  margin-top: 3rem;
+  font-size: 12px;
+}
